@@ -1,4 +1,5 @@
 export async function seed(knex) {
+  await knex('enclosures').del()
   await knex('enclosures').insert([
     {
       id: 1,

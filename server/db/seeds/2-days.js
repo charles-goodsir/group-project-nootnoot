@@ -1,4 +1,5 @@
 export async function seed(knex) {
+  await knex('days').del()
   await knex('days').insert([
     // Clownfish
     {
