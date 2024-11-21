@@ -3,7 +3,7 @@ import * as db from '../db/zoo.ts'
 
 const router = Router()
 
-router.get('/feeding-schedule', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const feedingSchedule = await db.getFeedingSchedule() 
 

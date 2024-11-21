@@ -1,16 +1,20 @@
-import { useFruits } from '../hooks/useFruits.ts'
+import useFeedingSchedule from "../hooks/useFeedingSchedule."
 
-function App() {
-  const { data } = useFruits()
+function FeedingScheduleList() {
+  const { data: feedingSchedule, isLoading, error } = useFeedingSchedule()
+
+  if (isLoading) return <p>Loading...</p>
+  if (error) return <p>Error loading feeding schedule.</p>
 
   return (
-    <>
-      <div className="app">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>{data && data.map((fruit) => <li key={fruit}>{fruit}</li>)}</ul>
-      </div>
-    </>
+    <ul>
+      {feedingSchedule?.map((item) => (
+        <li key={item.animal_id}>
+          {item.enclosure_type} ({item.type}) has a diet of {item.diet} at {item.time}.
+        </li>
+      ))}
+    </ul>
   )
 }
 
-export default App
+export default FeedingScheduleList
