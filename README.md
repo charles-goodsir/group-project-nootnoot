@@ -1,35 +1,41 @@
-# Boilerplate: Fullstack with Sass
+# Movier Finder
 
-## Setup
+## Installation
 
-### What's included
+To run this project locally, follow these steps:
 
-This repo includes:
+```bash
+# Clone the repository
+git clone https://github.com/charles-goodsir/group-project-CAMera
 
-* a single, simple API endpoint (`/api/v1/fruits`)
-* a single React component (`<App />`)
-* an example database module (`server/db/fruits.js`)
-* an API client module (`client/apis/fruits.js`)
-* configuration for Vitest and testing library
-* configuration for server-side debugging in VS Code
-* configuration for preprocessing Sass
+# Navigate to the project directory
+cd <project name> 
 
-### Installation
+# Install dependencies
+npm install
+```
 
-#### **From the Github UI**
+## Usage
+
+To start the application, use the following commands:
+
+```bash
+# Start the development server
+npm run dev
+
+# Or build for production
+npm run build
+```
+
+Example of how the application works:
+
+1. Open the app in your browser.
+2. Navigate through the features to explore the functionality.
+3. Interact with dynamic components to see real-time updates.
+
 
 See the instructions [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) to use Github's feature to create a new repo from a template.
 
-#### **From the command line**
-
-```
-git clone https://github.com/dev-academy-challenges/boilerplate-fullstack [your-project-name]
-cd [your-project-name]
-npm install # to install dependencies
-npm run dev # to start the dev server
-```
 
 You can find the server running on [http://localhost:3000](http://localhost:3000) and the client running on [http://localhost:5173](http://localhost:5173).
 
----
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-fullstack)
