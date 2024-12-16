@@ -1,4 +1,4 @@
-# Movier Finder
+# Zoo Keepers Friend
 
 ## Installation
 
@@ -6,7 +6,7 @@ To run this project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/charles-goodsir/group-project-CAMera
+git clone https://github.com/charles-goodsir/group-project-nootnoot
 
 # Navigate to the project directory
 cd <project name> 
